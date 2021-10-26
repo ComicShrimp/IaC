@@ -12,3 +12,4 @@ Studies about IaC (Ansible and Vagrant)
 ### References
 
 - https://www.youtube.com/watch?v=PX6OmeIbjC4
+- https://www.youtube.com/watch?v=GfOj2wgxyF4
