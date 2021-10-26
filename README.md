@@ -9,6 +9,8 @@ Studies about IaC (Ansible and Vagrant)
 2. Copy the key to the root folder of the project
    The private key must be named `id_rsa` and the public key `id_rsa.pub`
 
+3. The Vangrant file specify a network
+   The network specified on vagrant file might not exists, so, depending on your system, you may have to create, remove or edit the network
 ### References
 
 - https://www.youtube.com/watch?v=PX6OmeIbjC4

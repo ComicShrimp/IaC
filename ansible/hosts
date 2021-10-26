@@ -2,11 +2,11 @@
 ansible_python_interpreter=/usr/bin/python
 
 [debian]
-10.10.10.31
+machine01.iac.example
 
 [centos]
-10.10.10.32
+machine02.iac.example
 
 [linuxservers]
-10.10.10.31
-10.10.10.32
+machine01.iac.example
+machine02.iac.example
