@@ -11,6 +11,8 @@ Studies about IaC (Ansible and Vagrant)
 
 3. The Vangrant file specify a network
    The network specified on vagrant file might not exists, so, depending on your system, you may have to create, remove or edit the network
+
+4. All files from the root directory of this project are synced with the folder `/vagrant` in the hosts
 ### References
 
 - https://www.youtube.com/watch?v=PX6OmeIbjC4

@@ -1,0 +1,24 @@
+# Playbook example fo Ansible
+
+- name: Create and copy file
+  hosts: all
+  tasks:
+  - name: Create empty file
+    file:
+      path: "/home/vagrant/empty_file.txt"
+      state: touch
+  
+  - name: Create resolv.conf file
+    copy:
+      dest: "/home/vagrant/resolv.conf"
+      content: |
+        # Updated for Ansible
+        nameserver 8.8.8.8
+        nameserver 8.8.4.4
+
+  - name: Copy resolv.conf file
+    become: true
+    copy:
+      src: "/home/vagrant/resolv.conf"
+      dest: "/etc/resolv.conf"
+      remote_src: true
