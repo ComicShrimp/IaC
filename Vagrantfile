@@ -48,9 +48,11 @@ Vagrant.configure("2") do |config|
       EOF
 
       machine.vm.provision "file", source: "ansible/hosts", destination: "/home/vagrant/hosts"
+      machine.vm.provision "file", source: "ansible/ansible.cfg", destination: "/home/vagrant/ansible.cfg"
 
       machine.vm.provision "shell", inline: <<-EOF
         mv /home/vagrant/hosts /etc/ansible/hosts
+        mv /home/vagrant/ansible.cfg /etc/ansible/ansible.cfg
       EOF
     end
 
