@@ -37,14 +37,23 @@ Vagrant.configure("2") do |config|
       EOF
     
     if "#{name}" == "ansible"
-      config.vm.provision "file", source: "id_rsa", destination: "/home/vagrant/.ssh/id_rsa"
-      config.vm.provision "file", source: "id_rsa.pub", destination: "/home/vagrant/.ssh/id_rsa.pub"
+      machine.vm.provision "file", source: "id_rsa", destination: "/home/vagrant/.ssh/id_rsa"
+      machine.vm.provision "file", source: "id_rsa.pub", destination: "/home/vagrant/.ssh/id_rsa.pub"
 
-      config.vm.provision "shell", inline: <<-EOF
+      machine.vm.provision "shell", inline: <<-EOF
         chmod 600 /home/vagrant/.ssh/id_rsa
+
+        apt-get update
+        apt-get install ansible -y
+      EOF
+
+      machine.vm.provision "file", source: "ansible/hosts", destination: "/home/vagrant/hosts"
+
+      machine.vm.provision "shell", inline: <<-EOF
+        mv /home/vagrant/hosts /etc/ansible/hosts
       EOF
     end
-    
+
     end
   end
 end
