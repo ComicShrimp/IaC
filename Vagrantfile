@@ -3,8 +3,8 @@
 
 machines = {
   "ansible"   => {"memory" => "1024", "cpu" => "2", "ip" => "30", "image" => "ubuntu/focal64"},
-  "machine01" => {"memory" => "512",  "cpu" => "1", "ip" => "31", "image" => "debian/buster64"},
-  "machine02" => {"memory" => "512",  "cpu" => "1", "ip" => "32", "image" => "centos/7"}
+  "machine01" => {"memory" => "512",  "cpu" => "1", "ip" => "31", "image" => "gbailey/amzn2"},
+  "machine02" => {"memory" => "512",  "cpu" => "1", "ip" => "32", "image" => "gbailey/amzn2"}
 }
 
 Vagrant.configure("2") do |config|
