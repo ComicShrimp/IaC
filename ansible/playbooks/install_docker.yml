@@ -4,18 +4,16 @@
   hosts: linuxservers
   tasks:
   - name: Update Server
-    become: true
     yum:
       name: 
         - "*"
       state: latest
 
   - name: Remove packages not needed anymore
-    become: true
     yum:
       autoremove: yes
 
-  - name: Install Docker
+  - name: Install Docker package
     become: true
     yum:
       name: 

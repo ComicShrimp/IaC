@@ -1,0 +1,7 @@
+# Main playbook to install everything
+
+- name: Execute Test Playbook
+  import_playbook: playbooks/create_copy_file.yml
+
+- name: Install Docker
+  import_playbook: playbooks/install_docker.yml
