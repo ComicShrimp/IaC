@@ -1,0 +1,37 @@
+# Install Docker
+
+- name: Install Docker
+  hosts: linuxservers
+  tasks:
+  - name: Update Server
+    become: true
+    yum:
+      name: 
+        - "*"
+      state: latest
+
+  - name: Remove packages not needed anymore
+    become: true
+    yum:
+      autoremove: yes
+
+  - name: Install Docker
+    become: true
+    yum:
+      name: 
+        - docker
+      state: present
+
+  - name: Adding 'vagrant' user to Docker usergroup
+    become: yes
+    user:
+      name: vagrant
+      groups: docker
+      append: yes
+
+  - name: Start service
+    become: true
+    service: 
+      name: docker
+      state: started
+      enabled: yes
