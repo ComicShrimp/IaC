@@ -2,4 +2,4 @@
 id_rsa*
 .env
 .terraform
-terraform.tfstate*
+*.tfstate
