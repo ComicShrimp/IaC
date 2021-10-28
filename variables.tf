@@ -12,11 +12,6 @@ variable "env" {
   default     = "dev"
 }
 
-variable "ami" {
-  description = "AWS AMI to be used"
-  default     = "ami-09e67e426f25ce0d7"
-}
-
 variable "instance_type" {
   description = "AWS instance type"
   default     = "t2.micro"
