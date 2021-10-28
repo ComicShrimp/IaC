@@ -23,6 +23,6 @@ variable "repo" {
 }
 
 variable "vpc_cidr_block" {
-  desdescription = "Range of IPv4 address for the VPC"
-  default        = "172.17.0.0/16"
+  description = "Range of IPv4 address for the VPC"
+  default     = "172.17.0.0/16"
 }
