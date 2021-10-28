@@ -3,3 +3,4 @@ id_rsa*
 .env
 .terraform
 *.tfstate
+terraform_plan
