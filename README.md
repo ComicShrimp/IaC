@@ -27,3 +27,4 @@ Studies about IaC (Terraform, Ansible and Vagrant)
 - https://www.youtube.com/watch?v=PX6OmeIbjC4
 - https://www.youtube.com/watch?v=GfOj2wgxyF4
 - https://www.youtube.com/watch?v=bYvdJKTwx_I
+- https://www.youtube.com/watch?v=8mRZJcCgoS0
