@@ -21,3 +21,8 @@ variable "repo" {
   description = "Repository of the application"
   default     = "github.com/ComicShrimp/IaC"
 }
+
+variable "vpc_cidr_block" {
+  desdescription = "Range of IPv4 address for the VPC"
+  default        = "172.17.0.0/16"
+}
