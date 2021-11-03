@@ -24,7 +24,11 @@ Studies about IaC (Terraform, Ansible and Vagrant)
 
 ### References
 
+#### Leaning
 - https://www.youtube.com/watch?v=PX6OmeIbjC4
 - https://www.youtube.com/watch?v=GfOj2wgxyF4
 - https://www.youtube.com/watch?v=bYvdJKTwx_I
 - https://www.youtube.com/watch?v=8mRZJcCgoS0
+
+#### Pipeline
+- https://github.com/hashicorp/learn-terraform-github-actions/blob/main/.github/workflows/terraform.yml
