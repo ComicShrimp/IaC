@@ -1,6 +1,3 @@
-# -*- mode: ruby -*-
-# vi: set ft=ruby  :
-
 machines = {
   "ansible"   => {"memory" => "1024", "cpu" => "2", "ip" => "30", "image" => "ubuntu/focal64"},
   "machine01" => {"memory" => "512",  "cpu" => "1", "ip" => "31", "image" => "gbailey/amzn2"},
